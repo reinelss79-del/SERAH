@@ -188,4 +188,58 @@ img {
 .footer h2 {
   text-align: center;
   padding: 20px;
+
+}
+
+
+/* Responsive untuk layar kecil (HP) */
+@media (max-width: 768px) {
+  .img {
+    position: static;      /* jangan fixed/absolute di HP */
+    transform: none;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .img img {
+    width: 80%;            /* gambar otomatis mengecil */
+    height: auto;
+  }
+
+  .nama, .nam {
+    position: static;      /* teks ikut alur normal */
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .left {
+    position: static;      /* teks tidak absolute */
+    max-width: 100%;       /* ambil lebar penuh */
+    padding: 15px;
+  }
+
+  .divu {
+    flex-direction: column;  /* di about me (html3) jadi atas–bawah */
+    gap: 20px;
+    align-items: center;
+  }
+
+  .div2 {
+    flex: none;
+    width: 80%;
+  }
+
+  .di2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .img3 {
+    flex-direction: column; /* icon sosmed jadi atas–bawah */
+    gap: 20px;
+  }
+
+  .img3 img {
+    width: 150px; /* perkecil gambar sosmed */
+  }
 }
